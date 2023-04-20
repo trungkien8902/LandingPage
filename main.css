@@ -1,38 +1,47 @@
-html, body {
+html, body, ul, li {
     margin: 0;
     padding: 0;
 }
+
+.btn-group {
+    height: 60px;
+    padding-top: 16px;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
 .top-nav {
-    width: 100vw;
+    width: 100%;
     background: rgba(20, 20, 20, 0.8);
     position: fixed;
     z-index: 50;
 }
 
 .top-nav .logo {
-    display: block;
-    width: 211px;
-    height: 70px;
-    margin-left: 20px;
-    text-align: center;
+    flex: 1;
+}
+
+.logo img{
+    padding-top: 6px;
+    padding-left: 20px;
+    margin: 10px;
 }
 
 ul.sns {
-    position: absolute;
-    right: 300px;
-    top: 26px;
-    z-index: 60;
-    height: 47px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
 }
 
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+ul.sns li a {
+    font-size: 24px;
+    color: #fff;
+    margin: 20px;
 }
 
 a {
@@ -44,21 +53,325 @@ ul li {
     list-style: none;
 }
 
-.bg {
-    width: 100vw;
-    height: 1080px;
-    position: relative;
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    outline: 0;
 }
 
-.bg .video {
+.language {
+    width: 200px;
+    margin-left: 30px;
+}
+
+.language p {
+    color: #fff;
+    padding-top: 24px;
+}
+
+.bg {
+    width: 100%;
+    position: relative;
+    padding-top: 70px;
+}
+
+.bg .video #bg-video {
+    object-fit: fill;
+    object-position: center;
+    display: block;
+}
+
+.bg .video .cover {
+    /* background-image: url(./img/pv.png);
+    background-size: 180px;
+    background-repeat: repeat; */
+    background: rgba(20, 20, 20, .1);
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    object-position: center;
 }
 
+.bg01 {
+    background-image: url(./img/bg.png);
+    background-repeat: no-repeat;
+    object-fit:inherit;
+}
+
+.bg02 {
+    background-image: url(./img/bg02.png);
+    background-repeat: no-repeat;
+}
+
+.bg03 {
+    background-image: url(./img/bg03.png);
+    background-repeat: no-repeat;
+}
+
+.bg04 {
+    background-image: url(./img/bg04.png);
+    background-repeat: no-repeat;
+}
+
+
+.intro {
+    margin: auto;
+    display: flex;
+    width: 90%;
+    margin-top: 320px;
+    margin-bottom: 360px;
+}
+
+.intro-text {
+    flex: 2;
+    color: #000;
+}
+
+.intro-text h1 {
+    font-size: 60px;
+}
+
+.intro-text p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 30px;
+}
+
+
+.intro-video {
+    background-image: url(./img/iphone.png);
+    background-repeat: no-repeat;
+    flex: 1;
+    width: 410px;
+    height: 232px;
+    position: relative;
+}
+
+.intro-video img {
+    display: block;
+    position: absolute;
+    transform: rotate(-90deg);
+    
+}
+
+.intro-video video {
+    width: 335px;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 49px
+}
+
+.community-container {
+    width: 100%;
+    background: #222;
+}
+
+
+.banner {
+    background-image: url(./img/banner.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 46vw;
+}
+
+.idea {
+    padding-top: 200px;
+    padding-bottom: 170px;
+}
+
+.idea .content {
+    width: 70% !important;
+}
+
+.idea .img-idea img{
+    display: block;
+    float: right;
+}
+
+.text-idea {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.text-idea p{
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+.map {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 26px;
+}
+
+.map .content {
+    width: 72%;
+}
+
+.map p {
+    padding-top: 60px;
+    margin: 0 10px;
+}
+.map .col-6 {
+    padding: 0 !important;
+}
+
+.map img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 200px;
+}
+
+.info h1{
+    margin-bottom: 30px;
+}
+
+
+.info video {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.info .share {
+    width: 60%;
+    font-size: 24px;
+    float: right;
+}
+
+.info .share .fb{
+    text-decoration: none;
+    color: #2787f5;
+    margin-right: 10px;
+}
+
+.info .share p {
+    display: inline;
+}
+
+.info .share .ins{
+    text-decoration: none;
+    color: #d42e2e;
+}
+
+.img-story img {
+    display: block;
+}
+
+.bg05 .story {
+    width: 80%;
+    margin: auto;
+}
+
+.bg05 .story .hehe {
+    position: relative;
+}
+
+.bg05 .story .hehe img{
+    display: block;
+    width: 200px;
+    float: right;
+    opacity: .5;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+}
+
+.bg05 .story .hehe p{
+    padding-left: 10px;
+    position: absolute;
+    text-align: justify;
+    justify-content: center;
+}
+
+.story .img {
+    height: 412px;
+    background: url(./img/sto01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* video controller */
+
+.video-play-button {
+    display: block;
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -52px 0 0 -52px;
+    cursor: pointer;
+  }
+  
+  .video-play-outline {
+    display: block;
+    width: 96px;
+    height: 96px;
+    border: #FFF 4px solid;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    transition:all .5s;
+  }
+  
+  .video-play-circle {
+    stroke-dasharray: 315;
+    stroke-dashoffset: 315;
+    transition: stroke-dashoffset .5s;
+  }
+  
+  .video-play-button svg {
+    display: block;
+    transform: rotate(-90deg);
+    transition: transform .3s;
+  }
+  
+  .video-play-button:hover .video-play-circle {
+    stroke-dashoffset: 0;
+  }
+  
+  .video-play-button:active .video-play-outline {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  
+  .video-play-button:active svg {
+    transform: rotate(-90deg) scale(.95);
+  }
+
+  .story {
+    padding-bottom: 100px;
+  }
+
+  .story h1 {
+    padding: 20px 0;
+  }
+
+
+  #demo nav{
+    padding-top: 20px;
+    padding-left: 650px;
+  }
+
+  .community-container {
+    width: 100%;
+    height: 800px;
+    background-image: url(./img/footer.png);
+  }
